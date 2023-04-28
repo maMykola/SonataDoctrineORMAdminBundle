@@ -30,7 +30,7 @@
         "doctrine/doctrine-bundle": "^2.4",
         "doctrine/orm": "^2.8",
         "doctrine/persistence": "^2.1 || ^3.0",
-        "sonata-project/admin-bundle": "^4.18",
+        "sonata-project/admin-bundle": "dev-fix-parent-association-without-parent-field",
         "sonata-project/exporter": "^2.0 || ^3.0",
         "sonata-project/form-extensions": "^1.4",
         "symfony/config": "^4.4 || ^5.4 || ^6.0",
@@ -100,5 +100,11 @@
         "branch-alias": {
             "dev-master": "4.x-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/maMykola/SonataAdminBundle.git"
+        }
+    ]
 }
